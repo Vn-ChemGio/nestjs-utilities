@@ -1,6 +1,22 @@
-# nesthub
+<p align="center">
+  <a href="https://nestjs.com" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+</p>
 
-A collection of modular NestJS utility packages. Each module can be imported independently via sub-path exports so you only install what you need.
+<h1 align="center">nesthub</h1>
+
+<p align="center">
+  A collection of modular NestJS utility packages.
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/nesthub" target="_blank"><img src="https://img.shields.io/npm/v/nesthub.svg?style=flat-square" alt="NPM Version" /></a>
+  <a href="https://www.npmjs.com/package/nesthub" target="_blank"><img src="https://img.shields.io/npm/dm/nesthub.svg?style=flat-square" alt="NPM Downloads" /></a>
+  <a href="https://github.com/Vn-ChemGio/nesthub/actions" target="_blank"><img src="https://img.shields.io/github/actions/workflow/status/Vn-ChemGio/nesthub/npm-publish.yml?style=flat-square" alt="Build Status" /></a>
+  <a href="https://github.com/Vn-ChemGio/nesthub/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/github/license/Vn-ChemGio/nesthub.svg?style=flat-square" alt="Package License" /></a>
+  <a href="https://github.com/Vn-ChemGio/nesthub" target="_blank"><img src="https://img.shields.io/github/stars/Vn-ChemGio/nesthub?style=social" alt="GitHub Stars" /></a>
+  <a href="https://github.com/Vn-ChemGio/nesthub" target="_blank"><img src="https://img.shields.io/github/last-commit/Vn-ChemGio/nesthub?style=flat-square" alt="Last Commit" /></a>
+</p>
+
 
 ## Installation
 
@@ -10,16 +26,16 @@ npm install nesthub
 
 Each sub-package has its own peer dependencies. Install only the modules you need:
 
-| Import path | Install command | Description | README |
-|---|---|---|---|
-| `nesthub/typeorm` | `npm install nesthub @nestjs/typeorm @nestjs/config pg` | TypeORM configuration helpers (RDS PostgreSQL, MySQL) | [README](src/typeorm/README.md) |
-| `nesthub/cache` | `npm install nesthub keyv cacheable` + `@keyv/valkey` or `@keyv/redis` | Global cache module with Valkey / Redis backend | [README](src/cache/README.md) |
-| `nesthub/queue` | `npm install nesthub @nestjs/bullmq bullmq` | BullMQ config factory for Valkey / Redis backend | [README](src/queue/README.md) |
-| `nesthub/notification` | `npm install nesthub` + optional peers (see [README](src/notification/README.md)) | Multi-channel notification module (email, SMS, Firebase, Telegram) with templates, queue, TypeORM persistence | [README](src/notification/README.md) |
-| `nesthub/auth` | `npm install nesthub @nestjs/jwt @nestjs/passport passport passport-jwt bcrypt otplib` | Feature-rich Auth module — JWT, OAuth, SSO, 2FA, Passkeys, magic link, OTP, session management, GDPR account deletion | [README](src/auth/README.md) |
-| `nesthub/excel` | `npm install nesthub exceljs` | Export JSON data to Excel (.xlsx) — fast, zero boilerplate | [README](src/excel/README.md) |
+| Import path | Description | Document |
+|---|---|---|
+| `nesthub/typeorm` | TypeORM configuration helpers (RDS PostgreSQL, MySQL) | [README](src/typeorm/README.md) |
+| `nesthub/cache` | Global cache module with Valkey / Redis backend | [README](src/cache/README.md) |
+| `nesthub/queue` | BullMQ config factory for Valkey / Redis backend | [README](src/queue/README.md) |
+| `nesthub/notification` | Multi-channel notification module (email, SMS, Firebase, Telegram) with templates, queue, TypeORM persistence | [README](src/notification/README.md) |
+| `nesthub/auth` | Feature-rich Auth module — JWT, OAuth, SSO, 2FA, Passkeys, magic link, OTP, session management, GDPR account deletion | [README](src/auth/README.md) |
+| `nesthub/excel` | Export JSON data to Excel (.xlsx) — fast, zero boilerplate | [README](src/excel/README.md) |
 
-Click each README link above for detailed usage, environment variables, and options specific to that module.
+> **Tip:** Click each README link above for detailed usage, environment variables, and a full list of options specific to that module.
 
 ## Quick examples
 
