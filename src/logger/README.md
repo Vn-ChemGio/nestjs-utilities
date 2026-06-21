@@ -13,7 +13,7 @@ Structured logging for NestJS with Pino, correlation IDs, and request logging.
 ## Installation
 
 ```bash
-npm install @nesthub/logger
+npm install nesthub/logger
 npm install pino
 # Optional: for pretty printing
 npm install pino-pretty
@@ -23,7 +23,7 @@ npm install pino-pretty
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { LoggerModule } from '@nesthub/logger';
+import { LoggerModule } from 'nesthub/logger';
 
 @Module({
   imports: [
@@ -41,7 +41,7 @@ export class AppModule {}
 
 ```typescript
 import { Injectable } from '@nestjs/common';
-import { LoggerService } from '@nesthub/logger';
+import { LoggerService } from 'nesthub/logger';
 
 @Injectable()
 export class UserService {
@@ -57,7 +57,7 @@ export class UserService {
 
 ```typescript
 import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
-import { CorrelationIdMiddleware } from '@nesthub/logger';
+import { CorrelationIdMiddleware } from 'nesthub/logger';
 
 @Module({})
 export class AppModule implements NestModule {
@@ -71,7 +71,7 @@ export class AppModule implements NestModule {
 
 ```typescript
 import { APP_INTERCEPTOR } from '@nestjs/core';
-import { RequestLoggerInterceptor } from '@nesthub/logger';
+import { RequestLoggerInterceptor } from 'nesthub/logger';
 
 // Register as global interceptor
 const app = await NestFactory.create(AppModule);
