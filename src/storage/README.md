@@ -1,4 +1,4 @@
-# @nesthub/storage
+# nesthub/storage
 
 File upload & storage for NestJS with local filesystem and S3-compatible drivers.
 
@@ -13,7 +13,7 @@ File upload & storage for NestJS with local filesystem and S3-compatible drivers
 ## Installation
 
 ```bash
-npm install @nesthub/storage
+npm install nesthub/storage
 ```
 
 Optional peer dependencies:
@@ -29,7 +29,7 @@ npm install sharp
 
 ```typescript
 import { Module } from '@nestjs/common';
-import { StorageModule } from '@nesthub/storage';
+import { StorageModule } from 'nesthub/storage';
 
 @Module({
   imports: [
@@ -55,7 +55,7 @@ export class AppModule {}
 
 ```typescript
 import { Injectable } from '@nestjs/common';
-import { StorageService } from '@nesthub/storage';
+import { StorageService } from 'nesthub/storage';
 
 @Injectable()
 export class AvatarService {
