@@ -14,7 +14,7 @@ User activity feed for NestJS — in-app notifications and activity streams.
 ## Installation
 
 ```bash
-npm install nesthub/activity-feed
+npm install nesthub
 ```
 
 Ensure `@nestjs/typeorm` and `typeorm` are installed and your root `TypeOrmModule` is configured.

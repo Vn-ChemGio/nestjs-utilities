@@ -13,7 +13,7 @@ Structured logging for NestJS with Pino, correlation IDs, and request logging.
 ## Installation
 
 ```bash
-npm install nesthub/logger
+npm install nesthub
 npm install pino
 # Optional: for pretty printing
 npm install pino-pretty

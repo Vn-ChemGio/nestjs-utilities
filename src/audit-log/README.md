@@ -14,7 +14,7 @@ Audit trail for NestJS — track who did what and when.
 ## Installation
 
 ```bash
-npm install nesthub/audit-log
+npm install nesthub
 ```
 
 Ensure `@nestjs/typeorm` and `typeorm` are installed and your root `TypeOrmModule` is configured.

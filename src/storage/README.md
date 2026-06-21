@@ -13,7 +13,7 @@ File upload & storage for NestJS with local filesystem and S3-compatible drivers
 ## Installation
 
 ```bash
-npm install nesthub/storage
+npm install nesthub
 ```
 
 Optional peer dependencies:
