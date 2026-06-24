@@ -27,13 +27,15 @@ npm install nesthub
 Each sub-package has its own peer dependencies. Install only the modules you need:
 
 | Import path | Description | Document |
-|---|---|---|
+|---|---|---|---|
 | `nesthub/typeorm` | TypeORM configuration helpers (RDS PostgreSQL, MySQL) | [README](src/typeorm/README.md) |
 | `nesthub/cache` | Global cache module with Valkey / Redis backend | [README](src/cache/README.md) |
 | `nesthub/queue` | BullMQ config factory for Valkey / Redis backend | [README](src/queue/README.md) |
 | `nesthub/notification` | Multi-channel notification module (email, SMS, Firebase, Telegram) with templates, queue, TypeORM persistence | [README](src/notification/README.md) |
 | `nesthub/auth` | Feature-rich Auth module — JWT, OAuth, SSO, 2FA, Passkeys, magic link, OTP, session management, GDPR account deletion | [README](src/auth/README.md) |
 | `nesthub/excel` | Export JSON data to Excel (.xlsx) — fast, zero boilerplate | [README](src/excel/README.md) |
+| `nesthub/webhook` | Outgoing/incoming webhooks with queue, TypeORM persistence, circuit breaker | [README](src/webhook/README.md) |
+| `nesthub/stripe` | Stripe payment processing — intents, refunds, customers, subscriptions, checkout, webhooks, ACID store | [README](src/stripe/README.md) |
 
 > **Tip:** Click each README link above for detailed usage, environment variables, and a full list of options specific to that module.
 
